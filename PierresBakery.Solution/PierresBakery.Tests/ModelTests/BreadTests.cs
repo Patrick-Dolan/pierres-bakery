@@ -21,7 +21,7 @@ namespace PierresBakery.Tests
       Assert.AreEqual(numberOfLoaves, result);
     }
     [TestMethod]
-    public void CalculateCost_ReturnCostOfTwoBread_Bread()
+    public void CalculateCost_ReturnCostOfTwoBread_Int()
     {
       int numberOfLoaves = 2;
       int cost = 10;
@@ -29,13 +29,14 @@ namespace PierresBakery.Tests
       int result = newBread.CalculateCost();
       Assert.AreEqual(cost, result);
     }
+    [TestMethod]
+    public void CalculateCost_ReturnCostOfFourBread_Int()
+    {
+      int numberOfLoaves = 4;
+      int cost = 15;
+      Bread newBread = new Bread(numberOfLoaves);
+      int result = newBread.CalculateCost();
+      Assert.AreEqual(cost, result);
+    }
   }
 }
-// Example Test Method Structure
-//_________________________
-// [TestMethod]
-// public void NameOfMethodWeAreTesting_DescriptionOfBehavior_ExpectedReturnValue()
-// {
-//   // any necessary logic to prep for test; instantiating new classes, etc.
-//   Assert.AreEqual(EXPECTED RESULT, CODE TO TEST);
-// }

@@ -1,3 +1,4 @@
+using System;
 namespace PierresBakery.Models
 {
   public class Bread
@@ -10,7 +11,16 @@ namespace PierresBakery.Models
     }
     public int CalculateCost()
     {
-      return NumberOfLoaves * 5;
+      if (NumberOfLoaves >= 3)
+      {
+      int discountedLoaves = 0;
+      discountedLoaves = (NumberOfLoaves - (NumberOfLoaves % 3));
+      return discountedLoaves * 5;
+      }
+      else
+      {
+        return NumberOfLoaves * 5;
+      }
     }
   }
 }
