@@ -65,5 +65,14 @@ namespace PierresBakery.Tests
       int result = newPastry.CalculateCost();
       Assert.AreEqual(cost, result);
     }
+    [TestMethod]
+    public void GetPastryCost_ReturnPastryCost_Int()
+    {
+      int numberOfPastries = 2;
+      int pastryCost = 4;
+      Pastry newPastry = new Pastry(numberOfPastries);
+      int result = newPastry.PastryCost;
+      Assert.AreEqual(pastryCost, result);
+    }
   }
 }
