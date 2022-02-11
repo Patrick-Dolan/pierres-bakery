@@ -14,7 +14,7 @@ namespace PierresBakery.Models
       if (NumberOfLoaves >= 3)
       {
       int discountedLoaves = 0;
-      discountedLoaves = (NumberOfLoaves - (NumberOfLoaves % 3));
+      discountedLoaves = (NumberOfLoaves - (NumberOfLoaves / 3));
       return discountedLoaves * 5;
       }
       else

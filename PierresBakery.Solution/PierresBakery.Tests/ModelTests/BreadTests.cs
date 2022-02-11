@@ -38,5 +38,22 @@ namespace PierresBakery.Tests
       int result = newBread.CalculateCost();
       Assert.AreEqual(cost, result);
     }
-  }
+    [TestMethod]
+    public void CalculateCost_ReturnCostOfSixBread_Int()
+    {
+      int numberOfLoaves = 6;
+      int cost = 20;
+      Bread newBread = new Bread(numberOfLoaves);
+      int result = newBread.CalculateCost();
+      Assert.AreEqual(cost, result);
+    }
+    [TestMethod]
+    public void CalculateCost_ReturnCostOfSevenBread_Int()
+    {
+      int numberOfLoaves = 7;
+      int cost = 25;
+      Bread newBread = new Bread(numberOfLoaves);
+      int result = newBread.CalculateCost();
+      Assert.AreEqual(cost, result);
+    }
 }
