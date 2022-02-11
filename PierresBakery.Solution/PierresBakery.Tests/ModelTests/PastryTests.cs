@@ -38,5 +38,32 @@ namespace PierresBakery.Tests
       int result = newPastry.CalculateCost();
       Assert.AreEqual(cost, result);
     }
+    [TestMethod]
+    public void CalculateCost_ReturnCostOfFourPastries_int()
+    {
+      int numberOfPastries = 4;
+      int cost = 7;
+      Pastry newPastry = new Pastry(numberOfPastries);
+      int result = newPastry.CalculateCost();
+      Assert.AreEqual(cost, result);
+    }
+    [TestMethod]
+    public void CalculateCost_ReturnCostOfFivePastries_int()
+    {
+      int numberOfPastries = 5;
+      int cost = 9;
+      Pastry newPastry = new Pastry(numberOfPastries);
+      int result = newPastry.CalculateCost();
+      Assert.AreEqual(cost, result);
+    }
+    [TestMethod]
+    public void CalculateCost_ReturnCostOfSixPastries_int()
+    {
+      int numberOfPastries = 6;
+      int cost = 10;
+      Pastry newPastry = new Pastry(numberOfPastries);
+      int result = newPastry.CalculateCost();
+      Assert.AreEqual(cost, result);
+    }
   }
 }
