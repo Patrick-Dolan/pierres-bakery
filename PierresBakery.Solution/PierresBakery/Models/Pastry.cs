@@ -8,5 +8,9 @@ namespace PierresBakery.Models
     {
       NumberOfPastries = numberOfPastries;
     }
+    public int CalculateCost()
+    {
+      return NumberOfPastries * 2;
+    }
   }
 }
