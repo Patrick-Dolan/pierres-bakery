@@ -20,7 +20,15 @@ namespace PierresBakery.Tests
       int result = newBread.NumberOfLoaves;
       Assert.AreEqual(numberOfLoaves, result);
     }
-
+    [TestMethod]
+    public void CalculateCost_ReturnCostOfTwoBread_Bread()
+    {
+      int numberOfLoaves = 2;
+      int cost = 10;
+      Bread newBread = new Bread(numberOfLoaves);
+      int result = newBread.CalculateCost();
+      Assert.AreEqual(cost, result);
+    }
   }
 }
 // Example Test Method Structure

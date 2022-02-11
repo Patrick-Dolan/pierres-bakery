@@ -8,5 +8,9 @@ namespace PierresBakery.Models
     {
       NumberOfLoaves = numberOfLoaves;
     }
+    public int CalculateCost()
+    {
+      return NumberOfLoaves * 5;
+    }
   }
 }
