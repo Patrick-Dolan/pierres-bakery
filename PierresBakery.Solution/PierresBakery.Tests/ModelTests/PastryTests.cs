@@ -12,13 +12,13 @@ namespace PierresBakery.Tests
       Pastry newPastry = new Pastry(5);
       Assert.AreEqual(typeof(Pastry), newPastry.GetType());
     }
+    [TestMethod]
+    public void GetNumberOfPastries_ReturnNumberOfPastries_Int()
+    {
+      int numberOfPastries = 2;
+      Pastry newPastry = new Pastry(numberOfPastries);
+      int result = newPastry.NumberOfPastries;
+      Assert.AreEqual(numberOfPastries, result);
+    }
   }
 }
-// Example Test Method Structure
-//_________________________
-// [TestMethod]
-// public void NameOfMethodWeAreTesting_DescriptionOfBehavior_ExpectedReturnValue()
-// {
-//   // any necessary logic to prep for test; instantiating new classes, etc.
-//   Assert.AreEqual(EXPECTED RESULT, CODE TO TEST);
-// }
