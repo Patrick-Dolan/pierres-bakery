@@ -56,4 +56,5 @@ namespace PierresBakery.Tests
       int result = newBread.CalculateCost();
       Assert.AreEqual(cost, result);
     }
+  }
 }
