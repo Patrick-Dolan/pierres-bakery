@@ -16,15 +16,15 @@
 
 ## Description
 
-_{This is a detailed description of your application. Give as much detail as needed to explain what the application does as well as any other information you want users or other developers to have.}_
+This console application asks you how much bread and pastries you would like to order from Pierre's Bakery. Pierre's Bakery has a few deals with bread being buy two get your third free and pastries can be purchased for buy two get your third half off. Once you have placed your order of bread and pastries the application will tell you what the total cost of your order is. 
 
 ## Setup/Installation Requirements
 
-* This is a great place
-* to list setup instructions
-* in a simple
-* easy-to-understand
-* format
+* Clone or download the repo to your computer.
+* Navigate into the newly downloaded repo with the name <code>pierres-bakery</code>.
+* Once in side the folder open it with your terminal/code editor of choice.
+* to run the program navigate into "pierres-bakery/PierresBakery.Solution/PierresBakery/"
+* Now type the command: <br><code>dotnet enter</code>
 
 ## Known Bugs
 
