@@ -24,7 +24,7 @@ This console application asks you how much bread and pastries you would like to 
 * Navigate into the newly downloaded repo with the name <code>pierres-bakery</code>.
 * Once in side the folder open it with your terminal/code editor of choice.
 * to run the program navigate into "pierres-bakery/PierresBakery.Solution/PierresBakery/"
-* Now type the command: <br><code>dotnet enter</code>
+* Now type the command: <br><code>dotnet run</code>
 
 ## Known Bugs
 
